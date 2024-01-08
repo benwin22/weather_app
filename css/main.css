@@ -1,0 +1,12 @@
+body {
+    background-image: url("../css/assets/vlad-busuioc-xyPxcqh8Tt8-unsplash.jpg");
+    background-size: cover;
+}
+.container {
+    font-size: 35px;
+    font-weight: bolder;
+    text-shadow: gray;
+    text-align: center;
+    /* font-family:monospace */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}

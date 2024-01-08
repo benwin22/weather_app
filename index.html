@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="/WeatherApi/css/main.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/main.js" defer></script>
+<title>Winder Weather</title>
+</head>
+<body>
+    <h1 class="text-center">Weather App</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <form onsubmit="return false;">
+                    <label for="citysearch">City:</label>
+                    <input type="search" id="citysearch" name="citysearch" placeholder="Enter City Name" onkeyup="handleKeyUp(event)">
+                    <button type="button" class="btn btn-primary mx-2" onclick="loadData()">Submit</button>
+                    <button type="button" class="btn btn-secondary mx-2" onclick="clearData()">Clear Data</button>
+                </form>
+               
+        </div>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+              
+    
+                    <section class="list-group weather-list mt-4">
+                        
+                        <!-- API Content Here -->
+        
+                    </section>
+                
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
