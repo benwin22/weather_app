@@ -19,14 +19,14 @@ const handleKeyUp = (event) => {
 };
 
 const createList = (name, temp, temp_min, temp_max, humidity, weatherDescription) => {
-    const html = `<div name=${name} class="card mt-3 mb-3 bg-light p-2 bg-opacity-10" style="width: 18rem; ">
+    const html = `<div name=${name} class="card mt-3 mb-3 bg-light p-2 bg-opacity-10" style="width: 18rem; color: white">
         <ul class="list-group list-group-flush" name=${name}>
-            <li class="list-group-item bg-secondary bg-gradient p-2 bg-opacity-25">${name}</li>
-            <li class="list-group-item bg-secondary bg-gradient p-2 bg-opacity-25"> ${temp} °F temp</li>
-            <li class="list-group-item bg-secondary bg-gradient p-2 bg-opacity-25"> ${temp_min} °F min</li>
-            <li class="list-group-item bg-secondary bg-gradient p-2 bg-opacity-25"> ${temp_max} °F max</li>
-            <li class="list-group-item bg-secondary bg-gradient p-2 bg-opacity-25"> ${humidity} % humidity</li>
-            <li class="list-group-item bg-secondary bg-gradient p-2 bg-opacity-25"> Forecast: ${weatherDescription} </li>
+            <li class="list-group-item bg-secondary bg-gradient p-2 bg-opacity-25" style="color: black">${name}</li>
+            <li class="list-group-item bg-secondary bg-gradient p-2 bg-opacity-25"style="color: black"> ${temp} °F temp</li>
+            <li class="list-group-item bg-secondary bg-gradient p-2 bg-opacity-25"style="color: black"> ${temp_min} °F min</li>
+            <li class="list-group-item bg-secondary bg-gradient p-2 bg-opacity-25"style="color: black"> ${temp_max} °F max</li>
+            <li class="list-group-item bg-secondary bg-gradient p-2 bg-opacity-25"style="color: black"> ${humidity} % humidity</li>
+            <li class="list-group-item bg-secondary bg-gradient p-2 bg-opacity-25"style="color: black"> Forecast: ${weatherDescription} </li>
         </ul>
     </div>`;
     document.querySelector('.weather-list').insertAdjacentHTML('beforeend', html);
