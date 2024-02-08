@@ -1,0 +1,21 @@
+body {
+    background-image: url("/css/assets/AdobeStock_113061651.jpeg");
+    background-size: cover;
+  
+}
+.container {
+    font-size: 35px;
+    font-weight: bolder;
+    text-shadow: whitesmoke;
+    text-align: center;
+    /* font-family:monospace */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+h1 {
+    color: whitesmoke;
+}
+
+label {
+    color: whitesmoke;
+}
